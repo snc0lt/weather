@@ -9,13 +9,16 @@ function Forecast({ forecast }) {
       { weather.map((d, i) => {
         const resDate = new Date(d.dt * 1000)
         const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+        const days = [ 'Sun','Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+        const day = days[resDate.getDay()]
+        console.log(day)
         var month = months[resDate.getMonth()];
         var year = resDate.getFullYear();
         var date = resDate.getDate();
         return (
           <div className='forecast_card' key={i}>
             <div>
-              <p style={{ fontWeight: '600' }}>{date} {month} {year}</p>
+              <p style={{ fontWeight: '600', marginLeft: '20px' }}>{day}, {date} {month} {year}</p>
             </div>
             <div className='card_temp'>
               <p>{Math.floor(d.temp.min)}&deg;C / {Math.floor(d.temp.max)}&deg;C</p>
