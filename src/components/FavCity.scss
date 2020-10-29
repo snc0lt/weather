@@ -1,0 +1,23 @@
+.fav{
+  
+  background: white;
+  border: 0.3px solid #ededed;
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  margin-bottom: 20px;
+  
+  .fav_city{
+    display: flex;
+    justify-content: space-around;
+    padding: 2px;
+    align-items: center;
+    color: #545454
+  }
+  
+  .fav_city_desc{
+    display: flex;
+    justify-content: space-around;
+    color: #545454
+  }
+}
+

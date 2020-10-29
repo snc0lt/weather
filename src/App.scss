@@ -1,0 +1,65 @@
+.app_main{
+  width: 100%;
+  height: 40vh;
+  background-image: url('https://thumbs.dreamstime.com/b/bogota-skyline-distrito-capital-colombia-illustration-represents-city-its-most-notable-buildings-vector-fully-142047841.jpg');
+  border-radius: 20px;
+  margin: 30px 0px;
+}
+
+.app_secondary{
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  border-radius: 10px;
+  
+  .app_secodanry_forecast{
+    flex-grow: 1;
+    margin: 10px;
+    border-radius: 10px;
+  }
+
+  .app_secondary_place-to-visit{
+    display: flex;
+    flex-grow: 1;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  .place-to-visit_main{
+    height: 100%;
+    width: 60%;
+    margin: 5px;
+  }
+
+  .place-to-visit_secondary{
+    height: 100%;
+    width: 40%;
+    margin: 5px;
+  }
+
+  .app_secondary_cities{
+    flex-grow: 1;
+    margin: 2px;
+    border-radius: 10px;
+
+    .app_sencodary_fav-cities{
+      
+      height: 70%;
+      width: 100%;
+      border-radius: 10px;
+      padding: 5px;
+    }
+
+    .app_secondary_add-city{
+      height: 20%;
+      width: 100%;
+      border-radius: 10px;
+      padding: 5px;
+    }
+  }
+}
+
+.main_location{
+  display: flex;
+  align-items: center;
+  margin-left: 15%;
+}
