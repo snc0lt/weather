@@ -3,7 +3,7 @@
 }
 
 .main_temp-icon{
-  width: 10vw;
+  width: fit-content;
   height: 15vh;
   color: white;
   background: #2b5876;  /* fallback for old browsers */
@@ -17,11 +17,22 @@
   padding: 5px;
   margin-top: 50px;
   margin-bottom: 5px;
-  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.3)
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.3);
+
+  @media (max-width: 575.98px) {
+    border-radius: 10px;
+    padding: 2px;
+  }
+
+  // Small devices (landscape phones, less than 768px)
+  @media (max-width: 767.98px) {
+    border-radius: 10px;
+    padding: 2px;
+ }
 }
 
 .main_temp-temp{
-  width: 10vw;
+  width: fit-content;
   height: 10vh;
   color: white;
   font-weight: bold;
@@ -34,5 +45,20 @@
   background: linear-gradient(to right, #89216B, #DA4453); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   border-radius: 20px;
   padding: 5px;
-  box-shadow: 10px 20px 25px rgba(0, 0, 0, 0.3)
+  box-shadow: 10px 20px 25px rgba(0, 0, 0, 0.3);
+
+  @media (max-width: 575.98px) {
+    border-radius: 10px;
+    padding: 2px;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+
+  // Small devices (landscape phones, less than 768px)
+  @media (max-width: 767.98px) {
+    border-radius: 10px;
+    padding: 2px;
+    font-size: 1rem;
+    font-weight: 600;
+ }
 }
